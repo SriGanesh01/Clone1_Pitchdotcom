@@ -1,11 +1,16 @@
-import Header from '../components/Header';
-import Footer from '../components/footer';
+import HeaderHome from '../components/HeaderHome';
+import FooterHome from '../components/FooterHome';
+import HeroHome from '../components/HeroHome';
+import HeroineHome from '../components/HeroineHome';
 
 function Home() {
 	return (
 		<div>
-			<Header />
-			<Footer />
+			<HeaderHome />
+			<HeroHome />
+			<HeroineHome />
+			
+			<FooterHome />
 		</div>
 	);
 }
