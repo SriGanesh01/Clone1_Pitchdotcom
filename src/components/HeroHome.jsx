@@ -6,9 +6,9 @@ import Image5 from '../assets/object_5.png';
 
 function HeroHome() {
     return (
-        <div className="h-screen">
-            <div className=" bg-gradient-to-r from-[#5318ec] to-[#a366ef] h-full w-full text-center font-sans text-white z-50">
-                <div className='z-50'>
+        <div className="h-screen overflow-hidden">
+            <div className=" bg-gradient-to-r from-[#5318ec] to-[#a366ef] h-full w-full text-center font-sans text-white">
+                <div className=''>
                     <p className="text-5xl font-bold pt-[120px] text-[80px]">
                         <p className="">Win more deals.</p>
                         <p className="font-bold">Pitch<span className="font-extrabold">.</span></p>
@@ -23,9 +23,13 @@ function HeroHome() {
                         <a href='/demo' className="px-7 py-[10px] border border-white rounded font">Get a demo</a>
                     </div>
                 </div>
-                <div className='z-[-1]'>
+                <div className='absolute inset-0 pointer-events-none'>
                     <img src={Image1} alt="" className='absolute bottom-[-218px] left-[-170px] z-5 opacity-50 bg-clip-content pointer-events-none'/>
                     <img src={Image2} alt="" className='absolute bottom-16 left-24 z-4 opacity-50 bg-clip-content pointer-events-none'/>
+
+                </div>
+                <div className='absolute inset-0 overflow-hidden pointer-events-none'>
+
                     <img src={Image3} alt="" className='absolute top-[350px] right-[270px] z-1 opacity-50 bg-clip-content pointer-events-none'/>
                     <img src={Image4} alt="" className='absolute top-[230px] right-[170px] z-2 opacity-50 bg-clip-content pointer-events-none'/>
                     <img src={Image5} alt="" className='absolute top-[0px] right-[-230px] z-3 opacity-50 bg-clip-content pointer-events-none'/>

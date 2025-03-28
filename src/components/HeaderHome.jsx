@@ -2,7 +2,7 @@ import Logo from "../assets/logo2.png";
 
 function HeaderHome() {
     return (
-        <header className="sticky top-0 bg-gradient-to-r from-[#5318ec] to-[#a366ef] text-white h-[72px] w-full shadow-md">
+        <div className="sticky top-0  bg-gradient-to-r from-[#5318ec] to-[#a366ef] text-white h-[72px] w-full shadow-md z-50">
             <div className="flex justify-between items-center h-full px-5">
                 <a href="/" className="flex items-center">
                     <img src={Logo} alt="Company Logo" className="h-[32px] w-auto" />
@@ -19,7 +19,7 @@ function HeaderHome() {
                     <a href="/signup" className="px-6 py-2 bg-white text-[#7446ee] border border-white rounded hover:bg-gray-200 transition">Sign up</a>
                 </nav>
             </div>
-        </header>
+        </div>
     );
 }
 

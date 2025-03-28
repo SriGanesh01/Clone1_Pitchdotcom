@@ -1,1 +1,79 @@
 @import "tailwindcss";
+
+@layer utilities {
+  @keyframes loop-scroll {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+
+  @keyframes loop-scroll-reverse {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+
+  .animate-loop-scroll {
+    animation: loop-scroll 50s linear infinite;
+  }
+
+  .animate-loop-scroll-reverse {
+    animation: loop-scroll-reverse 50s linear infinite;
+  }
+
+  .animate-loop-scroll-slow {
+    animation: loop-scroll 60s linear infinite;
+  }
+
+  .animate-loop-scroll-reverse-slow {
+    animation: loop-scroll-reverse 60s linear infinite;
+  }
+
+  .animate-loop-scroll-slower {
+    animation: loop-scroll 70s linear infinite;
+  }
+
+  .animate-loop-scroll-reverse-slower {
+    animation: loop-scroll-reverse 70s linear infinite;
+  }
+
+  .group-hover\:paused:hover {
+    animation-play-state: paused;
+  }
+
+  .scroll-animate-loop {
+    animation: loop-scroll 50s linear infinite;
+    animation-play-state: paused;
+  }
+
+  .scroll-animate-loop-reverse {
+    animation: loop-scroll-reverse 50s linear infinite;
+    animation-play-state: paused;
+  }
+
+  .scroll-animate-loop-slow {
+    animation: loop-scroll 60s linear infinite;
+    animation-play-state: paused;
+  }
+
+  .scroll-animate-loop-reverse-slow {
+    animation: loop-scroll-reverse 60s linear infinite;
+    animation-play-state: paused;
+  }
+
+  .scroll-animate-loop-slower {
+    animation: loop-scroll 70s linear infinite;
+    animation-play-state: paused;
+  }
+
+  .scroll-animate-loop-reverse-slower {
+    animation: loop-scroll-reverse 70s linear infinite;
+    animation-play-state: paused;
+  }
+}
