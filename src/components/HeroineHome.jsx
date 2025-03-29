@@ -14,7 +14,7 @@ function HeroineHome() {
 	};
 
 	return (
-		<div className="h-screen text-white text-center font-sans font-semibold overflow-hidden ">
+		<div className="h-screen text-white text-center font-sans font-semibold overflow-hidden w-[100%] relative ">
 			<div className="w-[150%] h-2/3 
 				bg-[linear-gradient(to_right,#5318ec_0%,#5318ec_12.5%,#a366ef_76%,#a366ef_100%)] 
 				absolute translate-x-[-12.5%] rounded-b-[80%] overflow-hidden z-[-1]">
@@ -25,7 +25,7 @@ function HeroineHome() {
 
 
 			<div className="z-40">
-				<nav className="flex justify-center space-x-4 p-4 gap-x-20 font-sans">
+				<nav className="flex justify-center space-x-4 p-4 gap-x-20 font-sans relative">
 					<button onClick={() => handleNavClick(p1)} className={`hover:underline ${selected === p1 ? "underline" : ""} flex flex-row items-center gap-x-2`}>
 						<svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
 							<path id="Shape" fill-rule="evenodd" clip-rule="evenodd"
