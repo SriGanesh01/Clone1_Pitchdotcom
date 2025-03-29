@@ -14,8 +14,17 @@ function HeroineHome() {
 	};
 
 	return (
-		<div className="h-screen bg-gradient-to-r from-[#5318ec] to-[#a366ef] text-white text-center font-sans font-semibold">
-			<div>
+		<div className="h-screen text-white text-center font-sans font-semibold overflow-hidden ">
+			<div className="w-[150%] h-2/3 
+				bg-[linear-gradient(to_right,#5318ec_0%,#5318ec_12.5%,#a366ef_76%,#a366ef_100%)] 
+				absolute translate-x-[-12.5%] rounded-b-[80%] overflow-hidden z-[-1]">
+			</div>
+
+
+			<div className="w-[120%] h-2/3 bg-gradient-to-r from-[#330f8f] to-[#4c2f6f] opacity-40 absolute translate-x-[-5%] translate-y-[25%] rounded-b-[80%] overflow-hidden z-[-1] brightness-200 blur-2xl"></div>
+
+
+			<div className="z-40">
 				<nav className="flex justify-center space-x-4 p-4 gap-x-20 font-sans">
 					<button onClick={() => handleNavClick(p1)} className={`hover:underline ${selected === p1 ? "underline" : ""} flex flex-row items-center gap-x-2`}>
 						<svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -45,7 +54,7 @@ function HeroineHome() {
 					</button>
 					<button onClick={() => handleNavClick(p2)} className={`hover:underline ${selected === p2 ? "underline" : ""} flex flex-row items-center gap-x-2`}>
 						<svg width="25" height="24" viewBox="0 0 25 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-							<path id="Shape" fill-rule="evenodd" clip-rule="evenodd" 
+							<path id="Shape" fill-rule="evenodd" clip-rule="evenodd"
 								d="M8.57313 5.48777C8.67076 5.39014 8.82906 5.39014 8.92669 5.48777L9.8142 6.37529L8.71949 7.47001C8.42659 
 								7.7629 8.42659 8.23777 8.71949 8.53067C9.01238 8.82356 9.48725 8.82356 9.78015 8.53067L10.8749 7.43595L11.8622 
 								8.42333C11.1936 8.98788 10.5463 9.59113 9.95307 10.2234C9.58019 10.6208 9.23835 11.0093 8.94031 11.3801L5.98735 
@@ -82,7 +91,7 @@ function HeroineHome() {
 					</button>
 					<button onClick={() => handleNavClick(p3)} className={`hover:underline ${selected === p3 ? "underline" : ""} flex flex-row items-center gap-x-2`}>
 						<svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-							<path id="Shape" fill-rule="evenodd" clip-rule="evenodd" 
+							<path id="Shape" fill-rule="evenodd" clip-rule="evenodd"
 								d="M6 8.5C6 6.567 7.567 5 9.5 5C11.433 5 13 6.567 13 8.5V9.5C13 11.433 11.433 13 9.5 13C7.567 
 								13 6 11.433 6 9.5V8.5ZM9.5 6.5C8.39543 6.5 7.5 7.39543 7.5 8.5V9.5C7.5 10.6046 8.39543 11.5 9.5 
 								11.5C10.6046 11.5 11.5 10.6046 11.5 9.5V8.5C11.5 7.39543 10.6046 6.5 9.5 6.5ZM7.38075 15.6637C8.03314 
@@ -102,8 +111,8 @@ function HeroineHome() {
 						COLLABORATE
 					</button>
 					<button onClick={() => handleNavClick(p4)} className={`hover:underline ${selected === p4 ? "underline" : ""} flex flex-row items-center gap-x-2`}>
-					<svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-							<path id="Union" fill-rule="evenodd" clip-rule="evenodd" 
+						<svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+							<path id="Union" fill-rule="evenodd" clip-rule="evenodd"
 								d="M13.75 6.00049C14.1642 6.00049 14.5 6.33627 14.5 6.75049V14.2501C14.5 14.6643 14.1642 15.0001 
 								13.75 15.0001C13.3358 15.0001 13 14.6643 13 14.2501V6.75049C13 6.33627 13.3358 6.00049 13.75 6.00049ZM5 
 								17.2501C5 16.8359 5.33579 16.5001 5.75 16.5001H18.25C18.6642 16.5001 19 16.8359 19 17.2501C19 17.6643 
